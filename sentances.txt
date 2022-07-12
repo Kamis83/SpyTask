@@ -1,0 +1,1 @@
+[{"sentanceName":"Sent1","sentanceText":"Hania lubi wychodzić ze swoim pieskiem na spacery."},{"sentanceName":"Sent2","sentanceText":"Kamil lubi dużo jeść."}]
