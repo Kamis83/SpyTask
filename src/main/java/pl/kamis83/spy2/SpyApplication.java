@@ -3,8 +3,6 @@ package pl.kamis83.spy2;
 import pl.kamis83.spy2.handlers.*;
 import pl.kamis83.spy2.input.UserInputCommand;
 import pl.kamis83.spy2.input.UserInputManager;
-import pl.kamis83.spy2.spyTasks.CountWords;
-import pl.kamis83.spy2.spyTasks.SpyTaskDetector;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,10 +23,8 @@ public class SpyApplication {
         handlers.add(new HelpCommandHandler());
         handlers.add(new QuitCommandHandler());
         handlers.add(new SentenceCommandHandler());
-        handlers.add(new SpyTaskCommandHandler());
-
-
-
+        handlers.add(new SingleTaskCommandHandler());
+        handlers.add(new MultiTaskCommandHandler());
 
         boolean applicationLoop = true;
         while (applicationLoop) {

@@ -9,10 +9,6 @@ public class Sentance {
         this.sentanceText = sentanceText;
     }
 
-    public Sentance(String sentanceName) {
-        this.sentanceName = sentanceName;
-    }
-
     public Sentance() {
     }
 

@@ -35,19 +35,19 @@ public class SentenceCommandHandler extends BaseCommandHandler {
             }
             case "add" -> {
                 System.out.println("Please write a unique name for sentance");
-                sentance.setSentanceName(scanner.nextLine());
+                sentance.setSentanceName(scanner.nextLine().trim());
                 System.out.println("Please write a text for sentance");
-                sentance.setSentanceText(scanner.nextLine());
+                sentance.setSentanceText(scanner.nextLine().trim());
                 sentanceDao.add(new Sentance(sentance.getSentanceName(), sentance.getSentanceText()));
             }
             case "delete" -> {
                 String sentanceName = command.getParam().get(0);
-                System.out.println("The sentance with sentance Name:" + sentanceName + " was removed");
                 sentanceDao.delete(sentanceName);
             }
             default -> throw new IllegalArgumentException(String.format("Uknown action: %s from command %s",
                     command.getAction(), command.getCommand()));
         }
+
 
     }
 }
