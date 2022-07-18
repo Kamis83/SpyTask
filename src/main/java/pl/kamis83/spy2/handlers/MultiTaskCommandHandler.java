@@ -27,8 +27,6 @@ public class MultiTaskCommandHandler extends BaseCommandHandler {
         List<Task> multiTasks = new ArrayList<>();
         multiTasks.add(new CompareSentances());
         List<Sentance> sentances = new ArrayList<>(getSentances(command));
-        System.out.println();
-
         try {
             switch (command.getAction()) {
                 case "Compare" -> lookForTasksWithoutParams(command, multiTasks, sentances);
