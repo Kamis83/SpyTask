@@ -1,6 +1,6 @@
 package pl.kamis83.spy2.spyTasks;
 
-import pl.kamis83.spy2.model.Sentance;
+import pl.kamis83.spy2.model.Sentence;
 
 import java.util.List;
 
@@ -8,9 +8,9 @@ public class CountChars extends Task {
 
     public static String COMMAND_NAME = "CountChars";
 
-    public void makeTaskWithoutParam(List<Sentance> sentance) {
+    public void makeTaskWithoutParam(List<Sentence> sentence) {
 
-            int length = sentance.get(0).getSentanceText().length();
+            int length = sentence.get(0).getSentenceText().length();
             System.out.println("Number of chars in a sentance is: " + length);
 
     }

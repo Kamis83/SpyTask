@@ -1,6 +1,6 @@
 package pl.kamis83.spy2.spyTasks;
 
-import pl.kamis83.spy2.model.Sentance;
+import pl.kamis83.spy2.model.Sentence;
 
 import java.util.List;
 
@@ -9,11 +9,11 @@ public abstract class Task implements TaskDetectorWithoutParam,TaskDetectorWithP
     TaskDetectorWithParam taskDetectorWithParam;
 
 
-    public void makeTaskWithoutParam(List<Sentance> sentance){
-        taskDetectorWithoutParam.makeTaskWithoutParam(sentance);
+    public void makeTaskWithoutParam(List<Sentence> sentence){
+        taskDetectorWithoutParam.makeTaskWithoutParam(sentence);
     }
-    public void makeTaskWithParam(List <Sentance> sentance, List<String> param){
-        taskDetectorWithParam.makeTaskWithParam(sentance, param);
+    public void makeTaskWithParam(List <Sentence> sentence, List<String> param){
+        taskDetectorWithParam.makeTaskWithParam(sentence, param);
     }
     protected abstract String getCommandName();
 

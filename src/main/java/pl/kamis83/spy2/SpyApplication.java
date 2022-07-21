@@ -22,7 +22,7 @@ public class SpyApplication {
         List<CommmandHandler> handlers = new ArrayList<>();
         handlers.add(new HelpCommandHandler());
         handlers.add(new QuitCommandHandler());
-        handlers.add(new SentenceCommandHandler());
+        handlers.add(new SentanceCommandHandler());
         handlers.add(new SingleTaskCommandHandler());
         handlers.add(new MultiTaskCommandHandler());
 

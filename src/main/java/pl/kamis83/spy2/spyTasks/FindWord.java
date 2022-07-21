@@ -1,6 +1,6 @@
 package pl.kamis83.spy2.spyTasks;
 
-import pl.kamis83.spy2.model.Sentance;
+import pl.kamis83.spy2.model.Sentence;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ public class FindWord extends Task {
 
     private static final String COMMAND_NAME = "FindWord";
 
-    public void makeTaskWithParam(List <Sentance> sentance, List<String> param) {
-        String[] array = sentance.get(0).getSentanceText().
+    public void makeTaskWithParam(List <Sentence> sentence, List<String> param) {
+        String[] array = sentence.get(0).getSentenceText().
                 replace('.', ' ').toLowerCase().split("\\s");
         String paramWithoutCase = param.get(0).toLowerCase();
         int numberOfDuplication = 0;
@@ -22,7 +22,7 @@ public class FindWord extends Task {
             System.out.println("There is no word like " + param.get(0));
         }
         System.out.println("We have found  word: " + param.get(0) + " "
-                + numberOfDuplication + " times in the sentance named" + sentance.get(0).getSentanceName());
+                + numberOfDuplication + " times in the sentance named" + sentence.get(0).getSentenceName());
 
     }
 

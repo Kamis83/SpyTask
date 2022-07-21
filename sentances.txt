@@ -1,1 +1,0 @@
-[{"sentanceName":"Kamil","sentanceText":"Kamil je wielkie dania."},{"sentanceName":"Kamil2","sentanceText":"Wielkie dania są zjedzone przez Kamila;"},{"sentanceName":"Hania","sentanceText":"Kamil je wielkie dania."}]
