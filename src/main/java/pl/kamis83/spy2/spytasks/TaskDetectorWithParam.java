@@ -1,4 +1,4 @@
-package pl.kamis83.spy2.spyTasks;
+package pl.kamis83.spy2.spytasks;
 
 import pl.kamis83.spy2.model.Sentence;
 

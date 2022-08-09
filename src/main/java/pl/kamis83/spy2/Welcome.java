@@ -1,8 +1,6 @@
 package pl.kamis83.spy2;
 
 public class Welcome {
-    String info;
-
     public void showInfo(){
         System.out.println("*****************************************************************");
         System.out.println("    This application is for people who wants to spy Text      ");

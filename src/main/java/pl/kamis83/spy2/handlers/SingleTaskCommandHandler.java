@@ -3,7 +3,7 @@ package pl.kamis83.spy2.handlers;
 import pl.kamis83.spy2.dao.SentenceDao;
 import pl.kamis83.spy2.input.UserInputCommand;
 import pl.kamis83.spy2.model.Sentence;
-import pl.kamis83.spy2.spyTasks.*;
+import pl.kamis83.spy2.spytasks.*;
 
 import java.util.ArrayList;
 import java.util.List;
